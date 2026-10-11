@@ -1,0 +1,31 @@
+// ┊         ┊       ┊   ┊    ┊        ┊
+// ┊         ┊       ┊   ┊   ˚★⋆｡˚  ⋆
+// ┊         ┊       ┊   ⋆
+// ┊         ┊       ★⋆
+// ┊ ◦
+// ★⋆      ┊ .  ˚
+//            ˚★
+// Created Spring 2026
+
+setcpm(60)
+stack 
+(n("0 2 5 <[6 7,8] [7 8,10 11]> <[9 12] 13 14 16>") .sound("piano")
+  .scale("<C:pentatonic F:pentatonic G: mixolydian C:pentatonic>/4")
+  .room(1).color("#40B5AD")
+,
+n("<0@3 2>").sound ("gm_synth_strings_2:2")
+  .scale ("<C2:pentatonic F:pentatonic G: mixolydian C4:pentatonic>/4")
+  .attack(50).color("#9FE2BF")
+,
+n("8 [7 6] [4 5, 7 6] [3 2, 7 6] 1").sound ("gm_orchestral_harp")
+.scale("<C4:pentatonic F4:pentatonic G4: mixolydian C5:pentatonic>/4")
+.pan("<0 0.3 .6 1>2") .gain(0.4)
+.room(1).color("#E2BF9F")
+,
+n("<[7 [6@3 7]] [5 [8@3 [9 8]]]>/4") .sound ("gm_flute")
+.scale("<C3:pentatonic F3:pentatonic G3: mixolydian C3:pentatonic>/6")
+.room(2)
+.gain(0.6).color("#40B573")
+
+ 
+).pianoroll()
