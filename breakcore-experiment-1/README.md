@@ -2,8 +2,6 @@
 Here I explored how to recreate musical techniques idiomatic of the breakcore and jungle genres by following Switch Angel's tutorial on chopping breaks and samples.
 
 I explored the techniques:
-
-Effects: experimenting with reverb, phasing and low-pass filtering.
 - Sample chopping using .scrub() and .rib() to select and repeat section of audio.
 - Rhythmic variation using ply() to create stuttering and ratcheting effects
 - Sound design by layering break samples, white noise, pads and synthesised bass
