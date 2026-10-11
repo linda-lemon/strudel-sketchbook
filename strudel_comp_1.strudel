@@ -1,0 +1,41 @@
+// Created Spring 2026
+
+setcpm(60)
+ 
+$:n("<<<8 9 11 14 16> 7> 5 <4 2> 0>*8").sound("square")
+  .scale("<C5:major F5:mixolydian G5:minor>/8")
+  .lpf("1100").room(1.5)
+  .rarely(jux(rev))
+  .pan("<0 0.3 0.6 1 0.6 0.3>*2")
+
+$:n("0 3 <4 5> <7 <8 9>>").sound("sine")
+  .scale("<C3:major F3:mixolydian G3:minor>/8")
+  .room(1).gain(0.7)._scope()
+
+$:n("<<0 4> <2 1> [5@3 4]>/4").sound("supersaw")
+  .scale("<C3:major F3:mixolydian G:minor>/8")
+  .lpf("2000")._scope()
+
+ 
+$:n("<0!3 2, 3 2 5 4>/4").sound("gm_synth_strings_2")
+  .scale("<C3:major F3:mixolydian G3:minor>/8").gain(1)
+  .room(1).phaser(1)._scope()
+
+$:n("<<0 4> <2 1> [5@3 4]>/4").sound("gm_synth_bass_2")
+  .scale("<C1:major F1:mixolydian G1:minor>/8")
+  .lpf("700").room(1)
+  .mask("<0!16 1!32>")
+
+$:s("hh!3, cr/8 - 9000_bd")
+  .lpf("1500 1000!2").rarely(ply(2))
+  .mask("<0!16 1!32>")
+._punchcard()
+
+$:s("bd sd, hh*4").off(1/8, x=>x.speed(2))
+  .lpf("1400").rarely(ply(2))
+  .mask("<0!16 1!32>")
+._punchcard()
+
+$:n("<0 1 2 3 4 6 7 [8 9 10] 11 12 13 14>/3")
+  .sound("comp").room(1).almostNever(ply(2))
+  .pan("<0 0.3 0.6 1>")
