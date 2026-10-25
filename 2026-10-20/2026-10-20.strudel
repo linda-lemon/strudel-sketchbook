@@ -1,22 +1,45 @@
 //20.10.2026
 
-$: n("1 4 5").s("gm_fx_atmosphere").scale("<C1:major G1:major C1:dominant>").room(1).gain(.35)
+$: n("1 4 5").s("gm_fx_atmosphere")
+  .scale("<C1:major G1:major C1:dominant>")
+  .room(1).gain(.35)
 
-$: n("[8 5 8 4 8 3 7 1 9]*2").s("sine").scale("[<C3:major G3:major C3:dominant>]/4").room(2).gain(.2)
+$: n("[8 5 8 4 8 3 7 1 9]*2").s("sine")
+  .scale("[<C3:major G3:major C3:dominant>]/4")
+  .room(2).gain(.2)
 
-$: n("[8 5 8 4 8 3 7 1 9]*2").s("sine").scale("[<C6:major G6:major C6:dominant>]/4").room(2).gain(.2)
+$: n("[8 5 8 4 8 3 7 1 9]*2").s("sine")
+  .scale("[<C6:major G6:major C6:dominant>]/4")
+  .room(2).gain(.2)
 
-$: n("[8 5 8 4 8 3 7 1 9]*2").s("sine").scale("[<C5:major G5:major C5:dominant>]/4").room(2).gain(.1)
+$: n("[8 5 8 4 8 3 7 1 9]*2").s("sine")
+  .scale("[<C5:major G5:major C5:dominant>]/4")
+  .room(2).gain(.1)
 
-$: n("[ 8 9 5@2 7 8]/3").s("gm_string_ensemble_1").scale("[<C4:major G4:major C4:dominant>]/4").room(2).gain(.5)
+$: n("[ 8 9 5@2 7 8]/3").s("gm_string_ensemble_1")
+  .scale("[<C4:major G4:major C4:dominant>]/4")
+  .room(2).gain(.5)
 
-// $: n("[8 7 8]*4").s("sine").scale("[<C7:major G6:major C7:dominant>]/4").gain(.1).room(1.1)
+// $: n("[8 7 8]*4").s("sine")
+// .scale("[<C7:major G6:major C7:dominant>]/4")
+// .gain(.1).room(1.1)
 
-$: n("<[1 7 3] [<3 1 4> 8 <7 3,9>]>").s("gm_overdriven_guitar").scale("[<C2:major G2:major C2:dominant>]/4").room(1.5).gain(.4)
+$: n("<[1 7 3] [<3 1 4> 8 <7 3,9>]>").s("gm_overdriven_guitar")
+  .scale("[<C2:major G2:major C2:dominant>]/4")
+  .room(1.5).gain(.4)
 
 // drums
-$: s("hh*9").room(1.5).rarely(ply(2)).gain(.3)
 
-$: s("<bd*2 bd*3 > sd bd").room(1.5).rarely(ply(2)).gain(.15)
+$: s("hh*9").room(1.5)
+  .rarely(ply(2)).gain(.3)
+
+$: s("<bd*2 bd*3 > sd bd").room(1.5)
+  .rarely(ply(2)).gain(.15)
 
 $: s("<cr ~@3 > ~@2").room(.9).gain(.7) // occasional cymbal....
+
+
+
+
+
+
